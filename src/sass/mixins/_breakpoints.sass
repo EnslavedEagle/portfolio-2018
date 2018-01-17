@@ -1,0 +1,19 @@
+=xs
+  @media(max-width: map-get($grid-breakpoints, 'sm') - 1px)
+    @content
+
+=sm
+  @media(min-width: map-get($grid-breakpoints, 'sm'))
+    @content
+
+=md
+  @media(min-width: map-get($grid-breakpoints, 'md'))
+    @content
+
+=lg
+  @media(min-width: map-get($grid-breakpoints, 'lg'))
+    @content
+
+=xl
+  @media(min-width: map-get($grid-breakpoints, 'xl'))
+    @content

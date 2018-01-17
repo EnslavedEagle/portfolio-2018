@@ -1,0 +1,94 @@
+.site-header
+  +container-fluid
+  display: flex
+  justify-content: center
+  align-items: center
+
+  +e('container')
+    position: relative
+    width: 100%
+    max-width: 1200px
+    margin: 0 auto
+    +sm
+      &::before
+        display: block
+        content: ''
+        width: 100%
+        padding-top: 70%
+  
+  +e('content')
+    +sm
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      text-align: center
+      &::before
+        background-image: url('img/header-bg.svg')
+        background-position: center center
+        background-size: contain
+        background-repeat: no-repeat
+        position: absolute
+        width: 80%
+        height: 300px
+        left: 10%
+        top: 0
+        display: block
+        content: ''
+        z-index: -1
+
+    word-wrap: break-word
+
+  +e('link')
+    &:hover, &:focus
+      outline: none
+      filter: drop-shadow(0px 0px 10px darken(rgba($color-primary, .5), 10%))
+
+    +xs
+      display: table
+      margin: 1em auto
+    +sm
+      position: absolute
+      img
+        width: 100%
+
+    +m('hello')
+      +sm
+        width: 80%
+        top: 10%
+        left: 10%
+      +md
+        width: 55%
+        top: 10%
+        left: 22.5%
+    
+    +m('about')
+      +sm
+        width: 50%
+        right: 0%
+        top: 60%
+      +md
+        width: 25%
+        right: 5%
+        top: 35%
+    
+    +m('projects')
+      +sm
+        width: 60%
+        left: 0%
+        top: 90%
+      +md
+        width: 37.5%
+        left: 5%
+        top: 45%
+    
+    +m('contact')
+      +sm
+        width: 40%
+        right: 8%
+        top: 105%
+      +md
+        width: 20%
+        top: 45%
+        right: 25%

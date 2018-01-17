@@ -1,0 +1,41 @@
+.section-about
+  +container
+
+  .about-box
+    border: 1px solid $color-primary
+    border-radius: 2px
+    display: flex
+    flex-direction: column
+    margin: 2em 0
+
+    +e('photo')
+      border: 6px solid rgba($color-primary, .5)
+      border-radius: 4px
+      width: 100%
+      box-sizing: border-box
+      order: 1
+      transition: transform .55s ease-in-out
+
+      &:hover
+        transform: scale(1.25)
+
+      +md
+        object-fit: contain
+        width: 250px
+        align-self: safe center
+        margin: .75em
+
+    +e('description')
+      padding: .75rem 1rem
+      +e('heading')
+        margin: .5rem 0
+      +e('text')
+    
+    +md
+      flex-direction: row
+      flex-wrap: nowrap
+
+    &:nth-child(2n)
+      +md  
+        & > .about-box__photo
+          order: -1

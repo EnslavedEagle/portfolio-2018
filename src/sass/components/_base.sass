@@ -1,0 +1,35 @@
+body
+  font-family: 'Mukta Malar', sans-serif
+  
+  +xs
+    font-size: 16px
+
+  +sm
+    font-size: 18px
+
+img
+  max-width: 100%
+
+.site-header, .site-content section
+  transition: all .35s ease-in-out
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  pointer-events: none
+  overflow: hidden
+  padding-top: 60px
+
+  &:not(.active)
+    opacity: 0
+
+  &.active
+    opacity: 1
+    pointer-events: all
+    transition-delay: .15s
+
+strong
+  color: darken($color-primary, 25%)
+  &.accent
+    color: darken($color-accent, 25%)
+    font-weight: 900

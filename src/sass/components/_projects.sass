@@ -67,14 +67,22 @@
       max-width: 800px
       margin: 0 auto
 
+      +e('links')
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+
       +e('link')
         +e('icon')
-          width: 32px
-          height: 32px
+          width: 64px
+          height: 64px
           transform: scale(1)
-          transition: transform .15s ease-in-out
+          opacity: 1
+          transition: all .15s ease-in-out
           &:hover
             transform: scale(1.2)
+            opacity: .5
 
       +e('name')
         display: none

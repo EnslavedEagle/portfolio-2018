@@ -1,0 +1,51 @@
+<section id="projekty" class="section-projects">
+  <h2 class="section-projects__heading">Projekty</h2>
+  <p class="section-projects__description">Tutaj możesz dowiedzieć się więcej o moich dotychczasowych projektach, przy których pracowałem dla firm i klientów. Postanowiłem zamieścić tutaj też parę mniejszych, aczkolwiek ciekawych rzeczy, nad którymi pracowałem bądź wciąż pracuję.</p>
+
+  <ul class="projects-list">
+    {{#each projects}}
+      <li class="projects-list__item">
+        <a href="javascript:void(0)" data-project="{{this.name}}" class="projects-list__item__link">
+          <img src="{{this.logoUrl}}" alt="{{this.name}}" class="projects-list__item__image">
+        </a>
+      </li>
+    {{/each}}
+  </ul>
+
+  {{#each projects}}
+    <article class="project" data-project="{{this.name}}">
+      <header class="project__header">
+        <h3 class="project__header__heading">
+          {{this.name}}
+          <a href="{{this.linkUrl}}" target="_blank" title="{{this.name}}" class="project__link">
+            <img class="project__image" src="{{this.logoUrl}}" alt="{{this.name}}">
+          </a>
+        </h3>
+      </header>
+      <section class="project__case">
+        <h3 class="project__case__name">{{this.name}}</h3>
+        <p class="project__case__description">{{this.description}}</p>
+        <p class="project__case__date">{{this.date}}</p>
+        <address class="project__case__links">
+          <a href="{{this.linkUrl}}" target="_blank">Przejdź do strony!</a>
+        </address>
+        <ul class="project__case__stack stack">
+          {{#each this.stack}}
+            <li class="stack__item">
+              <img class="stack__item__image" title="{{this.name}}" src="{{this.image}}" alt="{{this.name}}">
+            </li>
+          {{/each}}
+        </ul>
+        {{#if this.screenshots}}
+          <div class="project__case__gallery screenshots">
+            {{#each this.screenshots}}
+            <a href="{{this}}" target="_blank" class="screenshots__item">
+              <img src="{{this}}" alt="" class="screenshots__item__image">
+            </a>
+            {{/each}}
+          </div>
+        {{/if}}
+      </section>
+    </article>
+  {{/each}}
+</section>

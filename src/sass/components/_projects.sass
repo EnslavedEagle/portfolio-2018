@@ -1,0 +1,103 @@
+.section-projects
+  +container
+
+  .projects-list
+    display: flex
+    flex-direction: column
+    list-style-type: none
+    text-align: center
+    flex-wrap: wrap
+    list-style-type: none
+    align-items: center
+    padding: 0
+    margin: 20vh auto
+    transition: all .5s ease-in-out
+
+    &.projects-list--hasSelected
+      margin: 0 auto
+      transform: scale(.55)
+
+    +md
+      flex-direction: row
+
+    +e('item')
+      display: block
+      margin: .5rem
+      flex: 0 0 calc(25% - 1rem)
+
+      +e('image')
+        object-fit: contain
+        filter: grayscale(100%)
+        transform: scale(1)
+        transition: all .15s ease-in-out
+
+    .projects-list__item__link:hover .projects-list__item__image,
+    .projects-list__item__link--active > .projects-list__item__image
+      filter: grayscale(0%)
+      transform: scale(1.25)
+
+  @keyframes Zoom
+    from
+      transform: scale(0)
+    to
+      transform: scale(1)
+
+  .project
+    display: none
+
+    +m('active')
+      display: block
+      animation: Zoom .5s ease-in-out forwards
+
+    +e('header')
+      text-align: center
+      margin: 1rem 0 1.4rem
+
+      +e('heading')
+        color: transparent
+        font-size: 0
+    
+    +e('image')
+      width: 100%
+      max-width: 300px
+      object-fit: contain
+
+    +e('case')
+      width: 100%
+      max-width: 800px
+      margin: 0 auto
+
+      +e('name')
+        display: none
+
+      +e('date')
+        font-style: italic
+        font-weight: 400
+        font-size: 1.2em
+        text-align: center
+
+      +e('links')
+        text-align: center
+      
+      .stack
+        display: flex
+        flex-direction: column
+        list-style-type: none
+        padding: 0
+        align-items: center
+        justify-content: center
+
+        +sm
+          flex-direction: row
+
+        +e('item')
+          margin: 1rem
+
+          +xs
+            width: 50%
+
+          +e('image')
+            object-fit: contain
+
+            +sm
+              width: 120px

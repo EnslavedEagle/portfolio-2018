@@ -1,0 +1,55 @@
+.section-contact
+  +container
+
+  @keyframes LeftToRight
+    from
+      transform: translateX(-100%)
+    to
+      transform: translateX(0%)
+
+  @keyframes RightToLeft
+    from
+      transform: translateX(100%)
+    to
+      transform: translateX(0%)
+
+  &.active .contact-box__part:first-child
+    transform: translateX(-100%)
+    animation: LeftToRight .55s .2s ease-in-out forwards
+  &.active .contact-box__part:last-child
+    transform: translateX(100%)
+    animation: RightToLeft .55s .2s ease-in-out forwards
+
+  .contact-box
+    width: 90%
+    margin: 0 auto
+    max-width: 800px
+    display: flex
+    flex-direction: column
+    flex-wrap: nowrap
+
+    +sm
+      flex-direction: row
+
+    +e('part')
+      border: 1px solid rgba($color-primary, .5)
+      flex: 0 0 100%
+      width: 100%
+      padding: 0 2.5rem
+      margin: .5rem
+
+      +sm
+        flex: 0 0 50%
+        width: 50%
+
+      +e('link')
+        display: block
+        text-align: center
+
+      +e('image')
+        height: 300px
+        transition: transform .15s ease-in-out
+        margin: 1rem 0
+        
+        &:hover
+          transform: scale(1.05) rotate(5deg)

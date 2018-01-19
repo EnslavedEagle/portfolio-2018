@@ -10,23 +10,26 @@ body
 img
   max-width: 100%
 
-.site-header, .site-content section
+.site-header, .site-content > [class^="section-"]
   transition: all .35s ease-in-out
   position: absolute
   top: 0
   left: 0
   right: 0
   pointer-events: none
-  overflow: hidden
-  padding-top: 60px
+  overflow-y: hidden
+  +sm
+    padding-top: 60px
 
   &:not(.active)
     opacity: 0
+    max-height: 100vh
 
   &.active
     opacity: 1
     pointer-events: all
     transition-delay: .15s
+    overflow-y: visible
 
 strong
   color: darken($color-primary, 25%)

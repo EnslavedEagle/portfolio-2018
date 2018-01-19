@@ -5,6 +5,7 @@ const babel = require('./config/babel-module');
 const sass = require('./config/sass');
 const handlebars = require('./config/handlebars-plugin');
 const copy = require('./config/copy-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const app = paths.src('app.js');
 const styles = paths.src('sass/style.sass');
@@ -30,7 +31,8 @@ const webpackConfig = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'
-    })
+    }),
+    new UglifyJSPlugin()
   ]
 }
 

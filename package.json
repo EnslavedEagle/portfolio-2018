@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --inline --config webpack.config.js",
-    "build": "webpack"
+    "build": "webpack --optimize-minimize"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.34",
@@ -24,7 +24,7 @@
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
-    "uglifyjs-webpack-plugin": "^1.1.2",
+    "uglifyjs-webpack-plugin": "^1.1.6",
     "webpack": "^3.10.0"
   },
   "dependencies": {
@@ -33,6 +33,7 @@
     "global": "^4.3.2",
     "jquery": "^3.2.1",
     "mappy-breakpoints": "^0.2.3",
+    "resolve-url-loader": "^2.2.1",
     "typi": "^3.1.2",
     "webpack-cli": "^2.0.2",
     "webpack-dev-server": "^2.9.7"

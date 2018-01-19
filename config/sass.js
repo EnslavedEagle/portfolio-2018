@@ -10,6 +10,7 @@ module.exports = {
         {
           loader: 'css-loader?-url'
         },
+        'resolve-url-loader',
         {
           loader: 'sass-loader?-url',
           options: {

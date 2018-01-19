@@ -7,6 +7,7 @@
     {
       "name": "Koderzy",
       "linkUrl": "http://koderzy.com/",
+      "repoUrl": "https://github.com/EnslavedEagle/koderzy-com",
       "logoUrl": "img/project-koderzy.png",
       "description": "Strona utworzona w celu wstępnej promocji projektu Koderzy. Z bardzo prostym skryptem napisanym w PHP, obsługującym formularz.",
       "date": "Grudzień 2017",
@@ -15,11 +16,17 @@
         { "name": "Sass", "image": "img/stack-sass.svg" },
         { "name": "ES6+", "image": "img/stack-es6.svg" },
         { "name": "PHP", "image": "img/stack-php.svg" }
+      ],
+      "screenshots": [
+        "img/ss-koderzy-1.jpg",
+        "img/ss-koderzy-2.jpg",
+        "img/ss-koderzy-3.jpg"
       ]
     },
     {
       "name": "Szamotulska Drukarnia",
       "linkUrl": "http://tth.patrykb.pl/drukarnia",
+      "repoUrl": "https://github.com/EnslavedEagle/drukarnia",
       "logoUrl": "img/project-drukarnia.png",
       "description": "Strona szamotulskiej drukarni im. Józefa Kawalera. Pierwszy projekt wykonany przy pomocy mojego własnego Website Developer Starter Pack, przy którym odkryłem mnóstwo ciekawych pomysłów na udoskonalenie narzędzia.",
       "date": "Grudzień 2017",
@@ -27,11 +34,17 @@
         { "name": "Webpack", "image": "img/stack-webpack.svg" },
         { "name": "Sass", "image": "img/stack-sass.svg" },
         { "name": "ES6+", "image": "img/stack-es6.svg" }
+      ],
+      "screenshots": [
+        "img/ss-drukarnia-1.jpg",
+        "img/ss-drukarnia-2.jpg",
+        "img/ss-drukarnia-3.jpg"
       ]
     },
     {
       "name": "Moskito",
       "linkUrl": "http://serwismoskito.pl/",
+      "repoUrl": "https://github.com/EnslavedEagle/moskito",
       "logoUrl": "img/project-moskito.png",
       "description": "Strona-wizytówka stworzona dla firmy zajmującej się sprzedażą i montażem moskitier, drzwi zewnętrznych, drzwi garażowych, i innych tego typu rzeczami.",
       "date": "Grudzień 2017",
@@ -39,6 +52,11 @@
         { "name": "Webpack", "image": "img/stack-webpack.svg" },
         { "name": "Sass", "image": "img/stack-sass.svg" },
         { "name": "ES6+", "image": "img/stack-es6.svg" }
+      ],
+      "screenshots": [
+        "img/ss-moskito-1.jpg",
+        "img/ss-moskito-2.jpg",
+        "img/ss-moskito-3.jpg"
       ]
     },
     {
@@ -51,6 +69,11 @@
         { "name": "Angular 4", "image": "img/stack-angular4.svg" },
         { "name": "TypeScript", "image": "img/stack-typescript.png" },
         { "name": "MongoDB", "image": "img/stack-mongodb.png" }
+      ],
+      "screenshots": [
+        "img/ss-soaply-1.jpg",
+        "img/ss-soaply-2.jpg",
+        "img/ss-soaply-3.jpg"
       ]
     },
     {
@@ -64,24 +87,40 @@
         { "name": "Ruby on Rails", "image": "img/stack-ruby-on-rails.svg" },
         { "name": "PostgreSQL", "image": "img/stack-postgresql.svg" },
         { "name": "CoffeeScript", "image": "img/stack-coffeescript.svg" }
+      ],
+      "screenshots": [
+        "img/ss-lifetramp-1.jpg",
+        "img/ss-lifetramp-2.jpg",
+        "img/ss-lifetramp-3.jpg"
       ]
     },
     {
       "name": "Kółko i Krzyżyk",
       "linkUrl": "http://tth.patrykb.pl/ng2-tictactoe/",
+      "repoUrl": "https://github.com/EnslavedEagle/tic-tac-toe-angular",
       "logoUrl": "img/project-tic-tac-toe.svg",
       "description": "Mój pierwszy projekt w Angularze, zadanie rekrutacyjne od firmy 314 - stworzenie działającej gry w kółko i krzyżyk, w której gracz może zmierzyć się z botem siedzącym na serwerze.",
       "date": "Kwiecień 2017",
       "stack": [
         { "name": "Angular4", "image": "img/stack-angular4.svg" }
+      ],
+      "screenshots": [
+        "img/ss-ttt-1.jpg",
+        "img/ss-ttt-2.jpg",
+        "img/ss-ttt-3.jpg"
       ]
     },
     {
       "name": "Licznik w 'czystym' CSS",
       "linkUrl": "http://tth.patrykb.pl/counter/",
+      "repoUrl": "https://github.com/EnslavedEagle/pure-css-animated-speed-counter",
       "logoUrl": "img/project-css-counter.jpg",
       "description": "Pewnego dnia postanowiłem zrobić coś fajnego w samym CSS i stworzyłem ten pseudo-licznik prędkości. Tylko strzałki są animowane JS-em. Kiedyś chciałem zrobić z tego jeszcze jakieś fajnie wyglądające menu, ale pojawiły się w tamtym czasie ważniejsze rzeczy do roboty.",
-      "date": "Czerwiec - Wrzesień 2017"
+      "date": "Czerwiec - Wrzesień 2017",
+      "screenshots": [
+        "img/ss-counter-1.jpg",
+        "img/ss-counter-2.jpg"
+      ]
     }
   ]
 }

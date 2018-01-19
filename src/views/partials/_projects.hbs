@@ -14,6 +14,7 @@
 
   {{#each projects}}
     <article class="project" data-project="{{this.name}}">
+
       <header class="project__header">
         <h3 class="project__header__heading">
           {{this.name}}
@@ -22,13 +23,25 @@
           </a>
         </h3>
       </header>
+
       <section class="project__case">
         <h3 class="project__case__name">{{this.name}}</h3>
         <p class="project__case__description">{{this.description}}</p>
         <p class="project__case__date">{{this.date}}</p>
         <address class="project__case__links">
-          <a href="{{this.linkUrl}}" target="_blank">Przejdź do strony!</a>
+          {{#if this.linkUrl}}
+            <a href="{{this.linkUrl}}" target="_blank" class="project__case__link">
+              <img src="img/icon-globe.svg" class="project__case__link__icon project__case__link__icon--live">
+            </a>
+          {{/if}}
+          {{#if this.repoUrl}}
+            <a href="{{this.repoUrl}}" target="_blank" class="project__case__link">
+              <img src="img/icon-github.svg" class="project__case__link__icon project__case__link__icon--github">
+            </a>
+          {{/if}}
         </address>
+
+        {{#if this.stack}}
         <ul class="project__case__stack stack">
           {{#each this.stack}}
             <li class="stack__item">
@@ -36,16 +49,17 @@
             </li>
           {{/each}}
         </ul>
-        {{#if this.screenshots}}
-          <div class="project__case__gallery screenshots">
-            {{#each this.screenshots}}
-            <a href="{{this}}" target="_blank" class="screenshots__item">
-              <img src="{{this}}" alt="" class="screenshots__item__image">
-            </a>
-            {{/each}}
-          </div>
         {{/if}}
       </section>
+
+      {{#if this.screenshots}}
+        <section class="project__screenshots screenshots">
+          {{#each this.screenshots}}
+            <img src="{{this}}" alt="" class="screenshots__item">
+          {{/each}}
+        </section>
+      {{/if}}
+
     </article>
   {{/each}}
 </section>

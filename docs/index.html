@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>Patryk Bernasiewicz, Front-End Developer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Strona-portfolio front-end developera z Wielkopolski">
+    <meta name="keywords" content="front-end developer poznań, front-end developer wielkopolska, web developer poznań, web developer wielkopolska, programista frontend poznań, programista javascript poznań, htmi css js poznań">
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Malar:400,800" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <nav class="site-navigation">
+      <ul class="site-navigation__list">
+        <li class="site-navigation__item"><a href="#home" class="site-navigation__link">Strona główna</a></li>
+        <li class="site-navigation__item"><a href="#o_mnie" class="site-navigation__link">O mnie</a></li>
+        <li class="site-navigation__item"><a href="#projekty" class="site-navigation__link">Projekty</a></li>
+        <li class="site-navigation__item"><a href="#kontakt" class="site-navigation__link">Kontakt</a></li>
+      </ul>
+      <button type="button" class="site-navigation__toggle"></button>
+    </nav>    <header id="home" class="site-header active">
+      <div class="site-header__container">
+        <div class="site-header__content">
+          <a href="#home" class="site-header__link site-header__link--hello">
+            <img class="site-header__link__image" src="img/header-hello.svg" alt="Hello!">
+          </a>
+          <a href="#o_mnie" class="site-header__link site-header__link--about">
+            <img class="site-header__link__image" src="img/header-about.svg" alt="O mnie">
+          </a>
+          <a href="#projekty" class="site-header__link site-header__link--projects">
+            <img class="site-header__link__image" src="img/header-projects.svg" alt="Projekty">
+          </a>
+          <a href="#kontakt" class="site-header__link site-header__link--contact">
+            <img class="site-header__link__image" src="img/header-contact.svg" alt="Kontakt">
+          </a>
+        </div>
+      </div>
+    </header>    <main class="site-content">
+      <section id="o_mnie" class="section-about">
+        <h2 class="section-about__heading">
+          Co nieco o mnie
+        </h2>
+        <div class="section-about__content">
+          <article class="about-box">
+            <img class="about-box__photo" src="img/photo-01.jpg" alt="To ja.">
+            <div class="about-box__description">
+              <h3 class="about-box__description__heading">Kim jestem?</h3>
+              <p class="about-box__description__text">Jestem domorosłym koderem! Swoją przygodę z&nbsp;programowaniem rozpocząłem w&nbsp;wieku 12&nbsp;lat, a&nbsp;kilka lat później poznałem tajniki webdevu, co zafascynowało mnie na&nbsp;dobre.</p>
+            </div>
+          </article>
+        
+          <article class="about-box">
+            <img class="about-box__photo" src="img/photo-02.jpg" alt="To ja.">
+            <div class="about-box__description">
+              <h3 class="about-box__description__heading">Czym się zajmuję?</h3>
+              <p class="about-box__description__text">Tworzę strony i aplikacje internetowe - z nastawieniem na to drugie. Szczególnie upodobałem sobie <strong>JavaScript</strong> i&nbsp;staram&nbsp;się go&nbsp;skutecznie wykorzystywać, zarówno przy&nbsp;aplikacjach front-endowych (<strong>Angular&nbsp;5</strong> oraz <b>odrobinkę</b> <strong>React 16</strong>), jak i back-endowych (<strong>Node.js</strong>, <strong>Express</strong>).</p>
+              <p class="about-box__description__text">Ostatnio staję się coraz większym fanem kultury pisania <strong>testów automatycznych</strong> i staram się je wciskać, gdzie tylko się da.</p>
+              <p class="about-box__description__text"></p>
+            </div>
+          </article>
+        
+          <article class="about-box">
+            <img class="about-box__photo" src="img/photo-03.jpg" alt="To ja.">
+            <div class="about-box__description">
+              <h3 class="about-box__description__heading">A po godzinach...</h3>
+              <p class="about-box__description__text">Prywatnie jestem graczem komputerowym i wielbicielem gryzoni, ze szczególnym uwzględnieniem myszoskoczków - to sprawiło, że wraz z narzeczoną przedsięwzięliśmy prace nad <a href="https://github.com/EnslavedEagle/egryzonie-web" target="_blank">projektem eGryzonie</a>, który w założeniu ma wspierać posiadaczy, opiekunów i właścicieli hodowli i domów tymczasowych dla gryzoni.</p>
+            </div>
+          </article>
+        
+          <article class="about-box">
+            <img class="about-box__photo" src="img/photo-04.jpg" alt="To ja.">
+            <div class="about-box__description">
+              <h3 class="about-box__description__heading">Gdzie jestem?</h3>
+              <p class="about-box__description__text">Wraz z&nbsp;narzeczoną, mieszkam sobie w&nbsp;małym miasteczku pod&nbsp;Poznaniem. Oczekuję na&nbsp;odpowiedni moment na&nbsp;relokację do&nbsp;dużego miasta, a&nbsp;w&nbsp;międzyczasie poszukuję najlepszego zespołu, z&nbsp;którym będzie można tworzyć coś&nbsp;fajnego w&nbsp;Internecie.</p>
+              <p class="about-box__description__text">Jeśli jesteś częścią takiego zespołu i&nbsp;akurat szukacie fronta z&nbsp;delikatnym parciem na&nbsp;backend i&nbsp;samo programowanie, <a href="#kontakt">koniecznie daj&nbsp;mi&nbsp;znać</a>!</p>
+            </div>
+          </article>
+        </div>
+      </section>      <section id="projekty" class="section-projects">
+        <h2 class="section-projects__heading">Projekty</h2>
+        <p class="section-projects__description">Tutaj możesz dowiedzieć się więcej o moich dotychczasowych projektach, przy których pracowałem dla firm i klientów. Postanowiłem zamieścić tutaj też parę mniejszych, aczkolwiek ciekawych rzeczy, nad którymi pracowałem bądź wciąż pracuję.</p>
+      
+        <ul class="projects-list">
+            <li class="projects-list__item">
+              <a href="javascript:void(0)" data-project="Koderzy" class="projects-list__item__link">
+                <img src="img/project-koderzy.png" alt="Koderzy" class="projects-list__item__image">
+              </a>
+            </li>
+            <li class="projects-list__item">
+              <a href="javascript:void(0)" data-project="Szamotulska Drukarnia" class="projects-list__item__link">
+                <img src="img/project-drukarnia.png" alt="Szamotulska Drukarnia" class="projects-list__item__image">
+              </a>
+            </li>
+            <li class="projects-list__item">
+              <a href="javascript:void(0)" data-project="Moskito" class="projects-list__item__link">
+                <img src="img/project-moskito.png" alt="Moskito" class="projects-list__item__image">
+              </a>
+            </li>
+            <li class="projects-list__item">
+              <a href="javascript:void(0)" data-project="Soaply" class="projects-list__item__link">
+                <img src="img/project-soaply.png" alt="Soaply" class="projects-list__item__image">
+              </a>
+            </li>
+            <li class="projects-list__item">
+              <a href="javascript:void(0)" data-project="Lifetramp" class="projects-list__item__link">
+                <img src="img/project-lifetramp.png" alt="Lifetramp" class="projects-list__item__image">
+              </a>
+            </li>
+            <li class="projects-list__item">
+              <a href="javascript:void(0)" data-project="Kółko i Krzyżyk" class="projects-list__item__link">
+                <img src="img/project-tic-tac-toe.svg" alt="Kółko i Krzyżyk" class="projects-list__item__image">
+              </a>
+            </li>
+            <li class="projects-list__item">
+              <a href="javascript:void(0)" data-project="Licznik w &#x27;czystym&#x27; CSS" class="projects-list__item__link">
+                <img src="img/project-css-counter.jpg" alt="Licznik w &#x27;czystym&#x27; CSS" class="projects-list__item__image">
+              </a>
+            </li>
+        </ul>
+      
+          <article class="project" data-project="Koderzy">
+      
+            <header class="project__header">
+              <h3 class="project__header__heading">
+                Koderzy
+                <a href="http://koderzy.com/" target="_blank" title="Koderzy" class="project__link">
+                  <img class="project__image" src="img/project-koderzy.png" alt="Koderzy">
+                </a>
+              </h3>
+            </header>
+      
+            <section class="project__case">
+              <h3 class="project__case__name">Koderzy</h3>
+              <p class="project__case__description">Strona utworzona w celu wstępnej promocji projektu Koderzy. Z bardzo prostym skryptem napisanym w PHP, obsługującym formularz.</p>
+              <p class="project__case__date">Grudzień 2017</p>
+              <address class="project__case__links">
+                  <a href="http://koderzy.com/" target="_blank" class="project__case__link">
+                    <img src="img/icon-globe.svg" class="project__case__link__icon project__case__link__icon--live">
+                  </a>
+                  <a href="https://github.com/EnslavedEagle/koderzy-com" target="_blank" class="project__case__link">
+                    <img src="img/icon-github.svg" class="project__case__link__icon project__case__link__icon--github">
+                  </a>
+              </address>
+      
+              <ul class="project__case__stack stack">
+                  <li class="stack__item">
+                    <img class="stack__item__image" title="Webpack" src="img/stack-webpack.svg" alt="Webpack">
+                  </li>
+                  <li class="stack__item">
+                    <img class="stack__item__image" title="Sass" src="img/stack-sass.svg" alt="Sass">
+                  </li>
+                  <li class="stack__item">
+                    <img class="stack__item__image" title="ES6+" src="img/stack-es6.svg" alt="ES6+">
+                  </li>
+                  <li class="stack__item">
+                    <img class="stack__item__image" title="PHP" src="img/stack-php.svg" alt="PHP">
+                  </li>
+              </ul>
+            </section>
+      
+              <section class="project__screenshots screenshots">
+                  <img src="img/ss-koderzy-1.jpg" alt="" class="screenshots__item">
+                  <img src="img/ss-koderzy-2.jpg" alt="" class="screenshots__item">
+                  <img src="img/ss-koderzy-3.jpg" alt="" class="screenshots__item">
+              </section>
+      
+          </article>
+          <article class="project" data-project="Szamotulska Drukarnia">
+      
+            <header class="project__header">
+              <h3 class="project__header__heading">
+                Szamotulska Drukarnia
+                <a href="http://tth.patrykb.pl/drukarnia" target="_blank" title="Szamotulska Drukarnia" class="project__link">
+                  <img class="project__image" src="img/project-drukarnia.png" alt="Szamotulska Drukarnia">
+                </a>
+              </h3>
+            </header>
+      
+            <section class="project__case">
+              <h3 class="project__case__name">Szamotulska Drukarnia</h3>
+              <p class="project__case__description">Strona szamotulskiej drukarni im. Józefa Kawalera. Pierwszy projekt wykonany przy pomocy mojego własnego Website Developer Starter Pack, przy którym odkryłem mnóstwo ciekawych pomysłów na udoskonalenie narzędzia.</p>
+              <p class="project__case__date">Grudzień 2017</p>
+              <address class="project__case__links">
+                  <a href="http://tth.patrykb.pl/drukarnia" target="_blank" class="project__case__link">
+                    <img src="img/icon-globe.svg" class="project__case__link__icon project__case__link__icon--live">
+                  </a>
+                  <a href="https://github.com/EnslavedEagle/drukarnia" target="_blank" class="project__case__link">
+                    <img src="img/icon-github.svg" class="project__case__link__icon project__case__link__icon--github">
+                  </a>
+              </address>
+      
+              <ul class="project__case__stack stack">
+                  <li class="stack__item">
+                    <img class="stack__item__image" title="Webpack" src="img/stack-webpack.svg" alt="Webpack">
+                  </li>
+                  <li class="stack__item">
+                    <img class="stack__item__image" title="Sass" src="img/stack-sass.svg" alt="Sass">
+                  </li>
+                  <li class="stack__item">
+                    <img class="stack__item__image" title="ES6+" src="img/stack-es6.svg" alt="ES6+">
+                  </li>
+              </ul>
+            </section>
+      
+              <section class="project__screenshots screenshots">
+                  <img src="img/ss-drukarnia-1.jpg" alt="" class="screenshots__item">
+                  <img src="img/ss-drukarnia-2.jpg" alt="" class="screenshots__item">
+                  <img src="img/ss-drukarnia-3.jpg" alt="" class="screenshots__item">
+              </section>
+      
+          </article>
+          <article class="project" data-project="Moskito">
+      
+            <header class="project__header">
+              <h3 class="project__header__heading">
+                Moskito
+                <a href="http://serwismoskito.pl/" target="_blank" title="Moskito" class="project__link">
+                  <img class="project__image" src="img/project-moskito.png" alt="Moskito">
+                </a>
+              </h3>
+            </header>
+      
+            <section class="project__case">
+              <h3 class="project__case__name">Moskito</h3>
+              <p class="project__case__description">Strona-wizytówka stworzona dla firmy zajmującej się sprzedażą i montażem moskitier, drzwi zewnętrznych, drzwi garażowych, i innych tego typu rzeczami.</p>
+              <p class="project__case__date">Grudzień 2017</p>
+              <address class="project__case__links">
+                  <a href="http://serwismoskito.pl/" target="_blank" class="project__case__link">
+                    <img src="img/icon-globe.svg" class="project__case__link__icon project__case__link__icon--live">
+                  </a>
+                  <a href="https://github.com/EnslavedEagle/moskito" target="_blank" class="project__case__link">
+                    <img src="img/icon-github.svg" class="project__case__link__icon project__case__link__icon--github">
+                  </a>
+              </address>
+      
+              <ul class="project__case__stack stack">
+                  <li class="stack__item">
+                    <img class="stack__item__image" title="Webpack" src="img/stack-webpack.svg" alt="Webpack">
+                  </li>
+                  <li class="stack__item">
+                    <img class="stack__item__image" title="Sass" src="img/stack-sass.svg" alt="Sass">
+                  </li>
+                  <li class="stack__item">
+                    <img class="stack__item__image" title="ES6+" src="img/stack-es6.svg" alt="ES6+">
+                  </li>
+              </ul>
+            </section>
+      
+              <section class="project__screenshots screenshots">
+                  <img src="img/ss-moskito-1.jpg" alt="" class="screenshots__item">
+                  <img src="img/ss-moskito-2.jpg" alt="" class="screenshots__item">
+                  <img src="img/ss-moskito-3.jpg" alt="" class="screenshots__item">
+              </section>
+      
+          </article>
+          <article class="project" data-project="Soaply">
+      
+            <header class="project__header">
+              <h3 class="project__header__heading">
+                Soaply
+                <a href="http://soap.ly/" target="_blank" title="Soaply" class="project__link">
+                  <img class="project__image" src="img/project-soaply.png" alt="Soaply">
+                </a>
+              </h3>
+            </header>
+      
+            <section class="project__case">
+              <h3 class="project__case__name">Soaply</h3>
+              <p class="project__case__description">Aplikacja internetowa, stworzona latem 2017 roku dla amerykańskiej firmy, dostarczającej usługę mycia samochodu na zamówienie z dojazdem do klienta. Tworzona równolegle z aplikacją na iOS z identyczną funkcjonalnością.</p>
+              <p class="project__case__date">Czerwiec - Wrzesień 2017</p>
+              <address class="project__case__links">
+                  <a href="http://soap.ly/" target="_blank" class="project__case__link">
+                    <img src="img/icon-globe.svg" class="project__case__link__icon project__case__link__icon--live">
+                  </a>
+              </address>
+      
+              <ul class="project__case__stack stack">
+                  <li class="stack__item">
+                    <img class="stack__item__image" title="Angular 4" src="img/stack-angular4.svg" alt="Angular 4">
+                  </li>
+                  <li class="stack__item">
+                    <img class="stack__item__image" title="TypeScript" src="img/stack-typescript.png" alt="TypeScript">
+                  </li>
+                  <li class="stack__item">
+                    <img class="stack__item__image" title="MongoDB" src="img/stack-mongodb.png" alt="MongoDB">
+                  </li>
+              </ul>
+            </section>
+      
+              <section class="project__screenshots screenshots">
+                  <img src="img/ss-soaply-1.jpg" alt="" class="screenshots__item">
+                  <img src="img/ss-soaply-2.jpg" alt="" class="screenshots__item">
+                  <img src="img/ss-soaply-3.jpg" alt="" class="screenshots__item">
+              </section>
+      
+          </article>
+          <article class="project" data-project="Lifetramp">
+      
+            <header class="project__header">
+              <h3 class="project__header__heading">
+                Lifetramp
+                <a href="http://lifetramp.com/" target="_blank" title="Lifetramp" class="project__link">
+                  <img class="project__image" src="img/project-lifetramp.png" alt="Lifetramp">
+                </a>
+              </h3>
+            </header>
+      
+            <section class="project__case">
+              <h3 class="project__case__name">Lifetramp</h3>
+              <p class="project__case__description">Projekt, przy którym pracowałem długoterminowo. Portal umożliwiający ludziom odmienienie swojego życia, pozwalając im spędzić czas z osobami, które robią w życiu coś fajnego. W tym projekcie odpowiadałem za dostarczanie nowych ficzerów, głównie po stronie narzędzi do zarządzania portalem.</p>
+              <p class="project__case__date">Czerwiec - Wrzesień 2017</p>
+              <address class="project__case__links">
+                  <a href="http://lifetramp.com/" target="_blank" class="project__case__link">
+                    <img src="img/icon-globe.svg" class="project__case__link__icon project__case__link__icon--live">
+                  </a>
+              </address>
+      
+              <ul class="project__case__stack stack">
+                  <li class="stack__item">
+                    <img class="stack__item__image" title="AngularJS" src="img/stack-angularjs.svg" alt="AngularJS">
+                  </li>
+                  <li class="stack__item">
+                    <img class="stack__item__image" title="Ruby on Rails" src="img/stack-ruby-on-rails.svg" alt="Ruby on Rails">
+                  </li>
+                  <li class="stack__item">
+                    <img class="stack__item__image" title="PostgreSQL" src="img/stack-postgresql.svg" alt="PostgreSQL">
+                  </li>
+                  <li class="stack__item">
+                    <img class="stack__item__image" title="CoffeeScript" src="img/stack-coffeescript.svg" alt="CoffeeScript">
+                  </li>
+              </ul>
+            </section>
+      
+              <section class="project__screenshots screenshots">
+                  <img src="img/ss-lifetramp-1.jpg" alt="" class="screenshots__item">
+                  <img src="img/ss-lifetramp-2.jpg" alt="" class="screenshots__item">
+                  <img src="img/ss-lifetramp-3.jpg" alt="" class="screenshots__item">
+              </section>
+      
+          </article>
+          <article class="project" data-project="Kółko i Krzyżyk">
+      
+            <header class="project__header">
+              <h3 class="project__header__heading">
+                Kółko i Krzyżyk
+                <a href="http://tth.patrykb.pl/ng2-tictactoe/" target="_blank" title="Kółko i Krzyżyk" class="project__link">
+                  <img class="project__image" src="img/project-tic-tac-toe.svg" alt="Kółko i Krzyżyk">
+                </a>
+              </h3>
+            </header>
+      
+            <section class="project__case">
+              <h3 class="project__case__name">Kółko i Krzyżyk</h3>
+              <p class="project__case__description">Mój pierwszy projekt w Angularze, zadanie rekrutacyjne od firmy 314 - stworzenie działającej gry w kółko i krzyżyk, w której gracz może zmierzyć się z botem siedzącym na serwerze.</p>
+              <p class="project__case__date">Kwiecień 2017</p>
+              <address class="project__case__links">
+                  <a href="http://tth.patrykb.pl/ng2-tictactoe/" target="_blank" class="project__case__link">
+                    <img src="img/icon-globe.svg" class="project__case__link__icon project__case__link__icon--live">
+                  </a>
+                  <a href="https://github.com/EnslavedEagle/tic-tac-toe-angular" target="_blank" class="project__case__link">
+                    <img src="img/icon-github.svg" class="project__case__link__icon project__case__link__icon--github">
+                  </a>
+              </address>
+      
+              <ul class="project__case__stack stack">
+                  <li class="stack__item">
+                    <img class="stack__item__image" title="Angular4" src="img/stack-angular4.svg" alt="Angular4">
+                  </li>
+              </ul>
+            </section>
+      
+              <section class="project__screenshots screenshots">
+                  <img src="img/ss-ttt-1.jpg" alt="" class="screenshots__item">
+                  <img src="img/ss-ttt-2.jpg" alt="" class="screenshots__item">
+                  <img src="img/ss-ttt-3.jpg" alt="" class="screenshots__item">
+              </section>
+      
+          </article>
+          <article class="project" data-project="Licznik w &#x27;czystym&#x27; CSS">
+      
+            <header class="project__header">
+              <h3 class="project__header__heading">
+                Licznik w &#x27;czystym&#x27; CSS
+                <a href="http://tth.patrykb.pl/counter/" target="_blank" title="Licznik w &#x27;czystym&#x27; CSS" class="project__link">
+                  <img class="project__image" src="img/project-css-counter.jpg" alt="Licznik w &#x27;czystym&#x27; CSS">
+                </a>
+              </h3>
+            </header>
+      
+            <section class="project__case">
+              <h3 class="project__case__name">Licznik w &#x27;czystym&#x27; CSS</h3>
+              <p class="project__case__description">Pewnego dnia postanowiłem zrobić coś fajnego w samym CSS i stworzyłem ten pseudo-licznik prędkości. Tylko strzałki są animowane JS-em. Kiedyś chciałem zrobić z tego jeszcze jakieś fajnie wyglądające menu, ale pojawiły się w tamtym czasie ważniejsze rzeczy do roboty.</p>
+              <p class="project__case__date">Czerwiec - Wrzesień 2017</p>
+              <address class="project__case__links">
+                  <a href="http://tth.patrykb.pl/counter/" target="_blank" class="project__case__link">
+                    <img src="img/icon-globe.svg" class="project__case__link__icon project__case__link__icon--live">
+                  </a>
+                  <a href="https://github.com/EnslavedEagle/pure-css-animated-speed-counter" target="_blank" class="project__case__link">
+                    <img src="img/icon-github.svg" class="project__case__link__icon project__case__link__icon--github">
+                  </a>
+              </address>
+      
+            </section>
+      
+              <section class="project__screenshots screenshots">
+                  <img src="img/ss-counter-1.jpg" alt="" class="screenshots__item">
+                  <img src="img/ss-counter-2.jpg" alt="" class="screenshots__item">
+              </section>
+      
+          </article>
+      </section>      <section id="kontakt" class="section-contact">
+        <h2 class="section-contact__heading">Kontakt</h2>
+        <p class="section-contact__description">To tutaj jest miejsce na wspaniałe, zachęcające formułki w stylu "zbudujmy razem coś wspaniałego!". ;) Sądzę jednak, że jeśli tu trafiłeś, to wiesz już, co robić!</p>
+      
+        <div class="contact-box">
+          <div class="contact-box__part contact-box__part--phone">
+            <h3 class="contact-box__part__heading">Zadzwoń do mnie...</h3>
+            <a class="contact-box__part__link" href="tel:+48514773604" title="+48 514 773 604">
+              <img class="contact-box__part__image" src="img/phone-call.svg" alt="Zadzwoń pod numer">
+            </a>
+          </div>
+          <div class="contact-box__part contact-box__part--email">
+            <h3 class="contact-box__part__heading">...lub napisz</h3>
+            <a class="contact-box__part__link" href="mailto:kontakt@patrykb.pl" title="kontakt@patrykb.pl">
+              <img class="contact-box__part__image" src="img/email-send.svg" alt="Wyślij e-mail do kontakt@patrykb.pl">
+            </a>
+          </div>
+        </div>
+      
+      </section>    </main>
+    <footer class="site-footer">
+      2018 Patryk Bernasiewicz. Zastrzegam sobie prawo do niczego. Kolorki, fonty, ikonki i inne ładne rzeczy wymyśliła <a href="https://www.behance.net/mariakuziola" target="_blank">Maria Kuzioła</a>.
+    </footer>
+    <script src="bundle.js"></script>
+  </body>
+</html>
